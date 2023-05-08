@@ -14,11 +14,11 @@
                   {{ if .Params.img }}
                   {{ with .Resources.Match .Params.img }}
                     {{ range . }}
-                      <img width="100%" src="{{ .RelPermalink }}" alt="{{ .Title }}">
+                      <img width="50%" src="{{ .RelPermalink }}" alt="{{ .Title }}">
                     {{ end }}
                   {{ end }}
                   {{ else }}
-                  <img width="100%" src="{{ .Site.BaseURL }}images/{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
+                  <img width="50%" src="{{ .Site.BaseURL }}images/{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
                   {{ end }}
                   
                   <div class="panel-body">
